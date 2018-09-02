@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "react",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "lib": ["es2015", "dom", "es6"]
+  },
+  "exclude": ["node_modules", ".git"]
+}
