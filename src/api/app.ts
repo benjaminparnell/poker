@@ -155,5 +155,7 @@ webSocketServer.on("request", (request: WebSocketRequest) => {
 
 process.once("SIGUSR2", () => {
   webSocketServer.shutDown();
-  process.kill(process.pid, "SIGUSR2");
+  httpServer.close(() => {
+    process.kill(process.pid, "SIGUSR2");
+  });
 });
